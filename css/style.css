@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Ultra', serif; */
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 5px;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    background: #006e7280;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+}
+nav .nav__logo img {
+    height: 40px;
+    width: 162px;
+}
+
+.nav .nav__user img {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.nav .nav__user span {
+    margin-left: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+nav .nav__actions input {
+    color: #000000;
+    border-radius: 16px;
+    padding: 0 10px;
+    background-color: #FFFFFF;
+    border: 0px;
+}
+
+.main__banner {
+    /* position: absolute;
+    top: 0px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: inset 0px -100px 50px -2px #000000; 
+    box-shadow: inset 0px -100px 50px -2px #000000;
+    overflow: hidden;
+}
+
+.main__banner .main__banner__img {
+    min-width: 100vw;
+    height: 50vh;
+    z-index: -2;
+}
+
+.main__banner .main__banner__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main__banner div.main__banner__img div.main__banner__img__buttonContainer {
+    position: relative;
+    /* padding: 0 50px; */
+    left: 10%;
+    bottom: 30%;
+    /* z-index: 10; */
+}
+
+.main__banner div.main__banner__img div.main__banner__img__buttonContainer button {
+    margin: 0 10px;
+    width: 100px;
+}
+
+.body {
+    height: 100%;
+}
+
+.posterContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.categoryTitle {
+    color: #FFFFFF;
+    margin: 10px;
+}

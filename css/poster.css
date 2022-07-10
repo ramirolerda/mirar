@@ -1,0 +1,43 @@
+.poster {
+    margin: 0 10px;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0px -100px 50px -2px #000000;
+    box-shadow: inset 0px -50px 50px -2px #006e72;
+}
+
+.poster:hover {
+    cursor: pointer;
+    transform: translate(2px, -2px);
+    transition: ease-in;
+    transition-duration: .1s;
+}
+
+.poster img {
+    border-radius: 10px;
+    min-width: 15vh;
+    z-index: -2;
+    position: relative;
+}
+
+.poster .poseter__data {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.poster .poseter__data span {
+    color: #FFFFFF;
+}
+
+.poseter__data__primary {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.poster:hover .poseter__data {
+    display: none;
+}
