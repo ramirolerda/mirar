@@ -95,6 +95,7 @@ nav .nav__actions input {
 .posterContainer {
     display: flex;
     flex-direction: row;
+    /* overflow: auto; */
 }
 
 .categoryTitle {

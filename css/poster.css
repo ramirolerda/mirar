@@ -1,30 +1,24 @@
 .poster {
-    margin: 0 10px;
-    position: relative;
+    display: flex;
+    height: 280px;
+    min-width: 200px;
     border-radius: 10px;
-    -webkit-box-shadow: inset 0px -100px 50px -2px #000000;
-    box-shadow: inset 0px -50px 50px -2px #006e72;
-}
-
-.poster:hover {
-    cursor: pointer;
-    transform: translate(2px, -2px);
-    transition: ease-in;
-    transition-duration: .1s;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
 }
 
 .poster img {
     border-radius: 10px;
-    min-width: 15vh;
-    z-index: -2;
-    position: relative;
+    width: 100%;
 }
 
 .poster .poseter__data {
     width: 100%;
     position: absolute;
     bottom: 0px;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 0 10px;
 }
@@ -39,5 +33,34 @@
 }
 
 .poster:hover .poseter__data {
-    display: none;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+    -webkit-box-shadow: inset 0px -50px 50px 0px rgba(0,110,114,0.8); 
+    box-shadow: inset 0px -50px 50px 0px rgba(0,110,114,0.8);
+    border-radius: 10px;
+}
+
+.poster:hover img {
+    z-index: -2;
+    position: relative;
+}
+
+.poster:not(:first-child) {
+    margin-left: -50px;
+}
+
+.poster:hover {
+    /* width: 260px; */
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+.poster:hover~.poster {
+    position: relative;
+    /* left: 40px; */
+    left: 50px;
+    transition: 0.4s ease-out;
 }

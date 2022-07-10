@@ -40,11 +40,11 @@ function getData() {
                     const article = document.createElement('article');
                     article.className = 'poster';
                     article.innerHTML = `
-                    <img src="https://img.cine.ar/image/${articleImg}/context/odeon_afiche" alt="">
                     <div class="poseter__data">
                         <span class="poseter__data__primary">${articleTitle}</span>
                         <span class="poseter__data__secondary">${articleYear}</span>
                     </div>
+                    <img src="https://img.cine.ar/image/${articleImg}/context/odeon_afiche" alt="">
                     `;
                     document.getElementById('posterContainer' + tira.id).appendChild(article);
                 })
